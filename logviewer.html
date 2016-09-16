@@ -152,6 +152,14 @@ function keypress(event)
     render();
     event.preventDefault();
   }
+  if (event.key == "ArrowUp") {
+    renderincremental(-1);
+    event.preventDefault();
+  }
+  if (event.key == "ArrowDown") {
+    renderincremental(1);
+    event.preventDefault();
+  }
 }
 
 function load()
